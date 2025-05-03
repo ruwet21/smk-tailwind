@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMK PELITA</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <!-- ---fobt awsome-- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ----TAILWIND OUTPUT-- -->
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <nav
+      class="fixed top-0 z-50 w-full border-b border-gray-400 bg-white/50 shadow-md backdrop-blur-sm"
+    >
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between sm:h-[110px]">
+          <!-- Logo -->
+          <div
+            class="text-3xl font-semibold text-amber-400 sm:text-4xl md:text-5xl"
+          >
+            SMK Pelita
+          </div>
+
+          <!-- Desktop Menu -->
+          <ul class="hidden md:flex md:items-center md:gap-6 lg:gap-10">
+            <li>
+              <a
+                href="#home"
+                class="text-sm font-semibold text-black transition-colors hover:text-red-500 md:text-base"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="text-sm font-semibold text-black hover:text-red-500 md:text-base"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#fasilitas"
+                class="text-sm font-semibold text-black hover:text-red-500 md:text-base"
+              >
+                Fasilitas
+              </a>
+            </li>
+            <li>
+              <a
+                href="#kontak"
+                class="text-sm font-semibold text-black hover:text-red-500 md:text-base"
+              >
+                Kontak
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="rounded-3xl bg-teal-500 px-4 py-2.5 text-sm text-white hover:bg-teal-700 md:px-5 md:py-3 md:text-base"
+              >
+                Registrasi
+              </a>
+            </li>
+          </ul>
+
+          <!-- Mobile Menu Button -->
+          <input type="checkbox" id="mobile-menu" class="peer hidden" />
+          <label
+            for="mobile-menu"
+            class="flex cursor-pointer flex-col gap-1.5 md:hidden"
+          >
+            <span class="h-0.5 w-6 bg-black"></span>
+            <span class="h-0.5 w-6 bg-black"></span>
+            <span class="h-0.5 w-6 bg-black"></span>
+          </label>
+
+          <!-- Mobile Menu -->
+          <div
+            class="absolute top-full left-0 hidden w-full bg-white/95 backdrop-blur-sm peer-checked:flex md:hidden"
+          >
+            <ul class="flex w-full flex-col items-center gap-4 p-4">
+              <li>
+                <a href="#home" class="text-black hover:text-red-500">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="text-black hover:text-red-500">About</a>
+              </li>
+              <li>
+                <a href="#fasilitas" class="text-black hover:text-red-500"
+                  >Fasilitas</a
+                >
+              </li>
+              <li>
+                <a href="#kontak" class="text-black hover:text-red-500"
+                  >Kontak</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="rounded-3xl bg-teal-500 px-5 py-2.5 text-white hover:bg-teal-700"
+                >
+                  Registrasi
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- -------SECTION HERO -->
+    <section
+      id="home"
+      class="flex min-h-screen items-center justify-center py-16"
+    >
+      <div class="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center gap-8 md:flex-row md:gap-12">
+          <!-- Left Content -->
+          <div class="text-center md:w-1/2 md:text-left">
+            <p class="mb-4 text-lg font-semibold text-blue-700 md:text-xl">
+              Mencerdaskan Generasi Bangsa
+            </p>
+            <h2
+              class="mb-6 text-4xl leading-tight font-extrabold text-blue-700 md:text-5xl"
+            >
+              Dengan Ilmu,<br class="hidden md:block" />Hidup Jadi Bermutu
+            </h2>
+            <p class="mb-8 leading-relaxed text-gray-600 md:text-lg">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Accusantium similique inventore rerum?
+            </p>
+            <a
+              href="#"
+              class="inline-block rounded-md bg-orange-500 px-6 py-4 font-semibold text-white transition duration-300 hover:bg-orange-600 md:text-lg"
+              >Read More</a
+            >
+          </div>
+
+          <!-- Right Content -->
+          <div class="mt-8 md:mt-0 md:w-1/2">
+            <img
+              src="img/siswa-sma.png"
+              alt="siswa-sma"
+              class="mx-auto h-auto w-full max-w-lg object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------ABOUT---- -->
+    <section
+      id="about"
+      class="mx-auto mt-20 flex h-screen w-full flex-col items-center justify-center px-[30px] pt-3 text-center md:mt-0 md:max-w-6xl md:flex-row md:pt-20"
+    >
+      <!-- Bagian Gambar -->
+      <div class="order-first mb-8 space-y-8 md:order-none md:mb-0 md:w-1/2">
+        <img
+          src="https://akcdn.detik.net.id/community/media/visual/2023/05/02/lambang-tut-wuri-handayani.png?w=700&q=90"
+          alt="tutwuri"
+          class="mx-auto h-80 md:mx-0 md:mr-28"
+        />
+      </div>
+
+      <!-- Bagian Visi Misi -->
+      <div class="visi-misi text-left md:w-1/2">
+        <p class="titile mb-5 font-primary text-xl font-bold text-amber-500">
+          Our Goal
+        </p>
+        <h2 class="mb-5 font-primary text-5xl font-extrabold text-blue-600">
+          Visi Misi Kami
+        </h2>
+        <p class="mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis
+          maiores vitae quia labore harum molestias perferendis similique a
+          doloribus.
+        </p>
+        <p class="mb-5">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui,
+          eveniet? Voluptates dolorem dolor natus sed, vero debitis
+          reprehenderit unde saepe sint voluptas ratione! Ea non, possimus
+          dignissimos explicabo expedita inventore.
+        </p>
+        <a
+          href="#"
+          class="btn-reg pb- inline-block rounded-3xl bg-teal-500 px-5 py-3.5 text-white hover:bg-teal-700"
+          >Read More..</a
+        >
+      </div>
+    </section>
+
+    <!-- ----FASILITAS--------- -->
+    <section
+      id="fasilitas"
+      class="mx-auto mt-10 mb-25 max-w-6xl items-center px-0 py-10 text-center xs:mt-20 md:mt-15"
+    >
+      <p class="titile mb-5 font-primary text-xl font-bold text-amber-500">
+        Our Facilities
+      </p>
+      <h2
+        class="mb-8 font-primary text-3xl font-extrabold text-blue-600 md:text-5xl"
+      >
+        Sarana & Prasarana
+      </h2>
+      <div
+        class="galeri mx-auto grid h-full w-fit shrink-0 origin-top -translate-y-4 scale-75 grid-cols-1 gap-3 xs:m-5 sm:mx-auto sm:my-10 md:m-10 md:translate-y-0 md:scale-100 md:grid-cols-2 lg:grid-cols-4"
+      >
+        <div class="card mx-auto flex flex-col">
+          <img
+            class="mx-auto flex-1 object-cover"
+            src="https://universitaspertamina.ac.id/uploads/department/content/ouOcvdN4okVetOogDl3xsBCV2SVztQMaDgi5pLpm.jpg"
+            alt="lab kimia"
+          />
+          <p class="mt-2 text-sm md:text-base">Lab Kimia</p>
+        </div>
+        <!-- Ulangi card yang sama untuk lainnya -->
+        <div class="card mx-auto flex flex-col">
+          <img
+            class="mx-auto flex-1 object-cover"
+            src="https://universitaspertamina.ac.id/uploads/department/content/ouOcvdN4okVetOogDl3xsBCV2SVztQMaDgi5pLpm.jpg"
+            alt="lab kimia"
+          />
+          <p class="mt-2 text-sm md:text-base">Lab Kimia</p>
+        </div>
+        <div class="card mx-auto flex flex-col">
+          <img
+            class="mx-auto flex-1 object-cover"
+            src="https://universitaspertamina.ac.id/uploads/department/content/ouOcvdN4okVetOogDl3xsBCV2SVztQMaDgi5pLpm.jpg"
+            alt="lab kimia"
+          />
+          <p class="mt-2 text-sm md:text-base">Lab Kimia</p>
+        </div>
+        <div class="card mx-auto flex flex-col">
+          <img
+            class="mx-auto flex-1 object-cover"
+            src="https://universitaspertamina.ac.id/uploads/department/content/ouOcvdN4okVetOogDl3xsBCV2SVztQMaDgi5pLpm.jpg"
+            alt="lab kimia"
+          />
+          <p class="mt-2 text-sm md:text-base">Lab Kimia</p>
+        </div>
+      </div>
+    </section>
+    <!-- ------KONTAK----- -->
+    <section
+      id="kontak"
+      class="mx-auto mt-30 max-w-6xl -translate-y-96 px-4 py-10 md:mt-15 md:-translate-y-0 md:px-6"
+    >
+      <div class="text-center">
+        <p class="titile mb-5 font-primary text-xl font-bold text-amber-500">
+          Our Contact
+        </p>
+        <h2
+          class="font-primary text-3xl font-extrabold text-blue-600 md:text-5xl"
+        >
+          Kontak Kami
+        </h2>
+      </div>
+
+      <div class="mt-8 flex flex-col gap-8 md:flex-row md:items-start">
+        <!-- Map -->
+        <div class="w-full md:w-1/2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.956363036641!2d112.73651607536588!3d-7.245806571173617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f940401c8755%3A0xe6b91ad0a085eaca!2sKantor%20Gubernur%20Jawa%20Timur!5e0!3m2!1sen!2sid!4v1746180115524!5m2!1sen!2sid"
+            class="mt-7 h-[350px] w-full rounded-lg border-0"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+
+        <!-- Form -->
+        <div class="w-full md:w-1/2">
+          <form action="#" method="post" class="space-y-4">
+            <div>
+              <label for="name" class="mb-2 block font-medium">Nama</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nama"
+                required
+                class="w-full rounded-lg border px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="mb-2 block font-medium">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+                class="w-full rounded-lg border px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              />
+            </div>
+
+            <div>
+              <label for="message" class="mb-2 block font-medium">Pesan</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tulis pesan.."
+                rows="6"
+                required
+                class="w-full rounded-lg border px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full rounded-lg bg-blue-600 px-6 py-3 text-white transition hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none md:w-auto"
+            >
+              Kirim
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- ----FOOTER-- -->
+    <footer
+      class="mt-12 -translate-y-96 bg-[#dedede] p-5 text-center md:-translate-y-0"
+    >
+      <div class="social flex justify-center gap-6 p-5">
+        <!-- Tambah flex dan gap di sini -->
+        <a href="#"><i class="fa-brands fa-facebook text-3xl"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter text-3xl"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram text-3xl"></i></a>
+      </div>
+      <div
+        class="links flex justify-center gap-4 text-center font-medium text-blue-600 hover:text-blue-800"
+      >
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#fasilitas" class="hover:underline">Fasilitas</a>
+        <a href="#kontak" class="hover:underline">Kontak</a>
+      </div>
+
+      <div class="credit mb-2.5 text-sm">
+        created by
+        <a href="https://github.com/ruwet21" class="font-bold">@RUWET21</a>. |
+        &copy; 2025
+      </div>
+    </footer>
+  </body>
+</html>
